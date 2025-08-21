@@ -16,9 +16,13 @@ public class condicionalif {
         String nombre;
         double sueldo, valorh, descuento=0;
         int horast;
-        
+        char sexo;
+                
         System.out.println("Ingrese nombre del trabajador: ");
         nombre = in.nextLine();
+        
+        System.out.println("Ingrese el sexo del empleado");
+        sexo = in.next().charAt(0);
         
         System.out.println("ingrese numero de horas trabajadas: ");
         horast = in.nextInt();
@@ -32,7 +36,7 @@ public class condicionalif {
             descuento = 0.16 * (sueldo);
             System.out.println("porcentaje de descuento de retencion: "+ descuento);
         } else {
-            System.out.println("No hay descuendto");
+            System.out.println("No hay descuento");
         }
         
         
